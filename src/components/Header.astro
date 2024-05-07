@@ -1,0 +1,46 @@
+---
+import Logo from "./icons/Logo.astro";
+---
+
+<header class="bg-white w-full opacity-90 fixed">
+  <div class="top-0 items-center w-full">
+    <nav
+      class="flex flex-row gap-x-10 w-full md:flex md:items-center md:justify-between"
+    >
+      <div class="flex items-center">
+        <Logo class="box-border items-center justify-start w-20 h-20 inline" />
+        <span
+          class="text-2xl text-black font-semibold font-['Roboto'] cursor-pointer"
+          >BarberShop
+        </span>
+      </div>
+
+      <ul
+        class="flex space-x-8 p-8 md:flex md:items-center z-[-1] md:z-auto md:static absolute"
+      >
+        <a
+          class="text-black font-semibold md:my-0 hover:text-sky-500 duration-500"
+          href="#">Inicio</a
+        >
+        <a
+          class="text-black font-semibold hover:text-sky-500 duration-500"
+          href="">Servicios</a
+        >
+        <a
+          class="text-black font-semibold hover:text-sky-500 duration-500"
+          href="">Reservas</a
+        >
+
+        <a
+          class="text-black font-semibold hover:text-sky-500 duration-500"
+          href="">Contacto</a
+        >
+      </ul>
+    </nav>
+  </div>
+</header>
+<style>
+  span {
+    font-family: "Lato", sans-serif;
+  }
+</style>
