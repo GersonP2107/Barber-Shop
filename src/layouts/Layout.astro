@@ -17,11 +17,18 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/Logo.svg" />
+    <link rel="icon" type="image/svg+xml" href="/barber-shop/public/" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </head>
-  <body class="bg-gray-200 max-w-full">
+  <body class="max-w-full">
     <Header />
 
     <slot />
@@ -41,9 +48,7 @@ const { title } = Astro.props;
   }
   html {
     font-family: "Onest Variable", system-ui, sans-serif;
-    background: #dfdfe0;
-    background-size: 224px;
-    color-scheme: dark light;
+    background: rgb(240, 244, 249);
   }
   code {
     font-family:
@@ -55,5 +60,9 @@ const { title } = Astro.props;
       Bitstream Vera Sans Mono,
       Courier New,
       monospace;
+  }
+
+  body {
+    background-color: rgb(238, 235, 235);
   }
 </style>

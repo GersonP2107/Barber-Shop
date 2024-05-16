@@ -4,5 +4,15 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind()]
-});
+  integrations: [tailwind()],
+  routes: [
+      {
+        path: '/oauth2callback',
+        load: () => import('./src/pages/oauth2callback.astro')
+      }
+    ]
+  }
+  
+
+);
+

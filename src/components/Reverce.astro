@@ -1,55 +1,72 @@
-<div class="flex flex-col items-center justify-center h-screen dark">
-  <div class="w-full max-w-md bg-gray-800 rounded-lg shadow-md p-6">
-    <h2 class="text-2xl font-bold text-gray-200 mb-4">Reservar cita</h2>
+<div class="p-10">
+  <div class="md:flex flex-col items-center justify-center h-screen dark">
+    <div class="w-full max-w-md bg-white rounded-lg shadow-md p-6">
+      <h2 class="text-2xl font-bold text-black mb-4">Reservar cita</h2>
 
-    <form class="flex flex-wrap">
-      <input
-        type="text"
-        class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] mr-[2%]"
-        placeholder="Nombre"
-      />
-      <input
-        type="email"
-        class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] ml-[2%]"
-        placeholder="Email"
-      />
-      <input
-        type="number"
-        class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] mr-[2%]"
-        placeholder="Horas disponibles"
-      />
-      <select
-        class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] ml-[2%]"
-      >
-        <option value="male">Cabello</option>
-        <option value="female">Barba</option>
-        <option value="other">Facial</option>
-      </select>
-      <select
-        id="Empleados"
-        class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] mr-[2%]"
-      >
-        <option value="male">Juan</option>
-        <option value="female">Andres</option>
-        <option value="other">Camilo</option>
-        <option value="other">Fernando</option>
-      </select>
-      <input
-        type="date"
-        class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] ml-[2%]"
-        placeholder="Date of Birth"
-      />
-      <textarea
-        name="Nota"
-        class="bg-gray-700 text-gray-200 border-0 rounded-md p-2 mb-auto md:mb-auto md:w-full md:h-auto md:min-h-[100px] md:max-h-[100px] md:flex-grow md:flex-shrink md:flex-auto focus:bg-gray-md:focus:outline-none:focus:ring-blue-md:focus:border-transparent transition ease-in-out duration-fastest"
-        placeholder="Nota (Opcional)"></textarea>
+      <form id="eventForm" class="flex flex-wrap">
+        <input
+          type="text"
+          class="bg-[#eeebeb] text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] mr-[2%]"
+          placeholder="Nombre"
+        />
+        <input
+          type="email"
+          class="bg-[#eeebeb] text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] ml-[2%]"
+          placeholder="Email"
+        />
+        <input
+          type="number"
+          class="bg-[#eeebeb] text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] mr-[2%]"
+          placeholder="Horas disponibles"
+        />
+        <select
+          class="bg-[#eeebeb] text-gray-400 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] ml-[2%]"
+        >
+          <option value="male">Cabello</option>
+          <option value="female">Barba</option>
+          <option value="other">Facial</option>
+        </select>
+        <select
+          id="Empleados"
+          class="bg-[#eeebeb] text-gray-400 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] mr-[2%]"
+        >
+          <option value="male">Juan</option>
+          <option value="female">Andres</option>
+          <option value="other">Camilo</option>
+          <option value="other">Fernando</option>
+        </select>
+        <input
+          type="date"
+          class="bg-[#eeebeb] text-gray-400 border-0 rounded-md p-2 mb-4 focus:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full md:w-[48%] ml-[2%]"
+          placeholder="Date of Birth"
+        />
+        <textarea
+          name="Nota"
+          class="bg-[#eeebeb] text-gray-200 border-0 rounded-md p-2 mb-auto md:mb-auto md:w-full md:h-auto md:min-h-[100px] md:max-h-[100px] md:flex-grow md:flex-shrink md:flex-auto focus:bg-gray-md:focus:outline-none:focus:ring-blue-md:focus:border-transparent transition ease-in-out duration-fastest"
+          placeholder="Nota (Opcional)"></textarea>
 
-      <button
-        type="submit"
-        class="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150"
-      >
-        Reservar
-      </button>
-    </form>
+        <button
+          type="submit"
+          class="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150"
+        >
+          Reservar
+        </button>
+      </form>
+    </div>
   </div>
 </div>
+<script>
+  document
+    .getElementById("eventForm")
+    .addEventListener("submit", async function (event) {
+      event.preventDefault();
+
+      const formData = new FormData(event.target);
+      const title = formData.get("title");
+      const date = formData.get("date");
+      const time = formData.get("time");
+
+      // Aquí puedes enviar los datos del evento a tu servidor para manejar la creación del evento en los calendarios
+      // Puedes usar fetch() u otra librería de AJAX para enviar los datos al servidor
+    });
+</script>

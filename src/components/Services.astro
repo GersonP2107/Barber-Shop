@@ -2,79 +2,84 @@
 import "../styles/fonts.css";
 ---
 
-<div class="flex justify-center">
-  <h1 class="font-thin text-5xl mb-2 text-center w-72 h-32 p-10 pb-36">
-    SERVICIOS
-  </h1>
+<div class="">
+  <div class="flex justify-center">
+    <h1 class="font-thin text-4xl md:text-5xl mb-2 text-center w-72 h-32 p-10">
+      SERVICIOS
+    </h1>
+  </div>
 </div>
-
-<section>
-  <article>
-    <div class="">
-      <a href="">
+<section class="flex flex-col m-10 items-center w-[310px] md:gap-5">
+  <article class="m-5">
+    <div class="card w-[320px] md:w-[300px] bg-base-100 shadow-xl rounded-xl">
+      <figure class="">
         <img
-          class=""
-          src="https://images.pexels.com/photos/13138585/pexels-photo-13138585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="cabello"
+          class="rounded-t-lg"
+          src="https://images.pexels.com/photos/13138585/pexels-photo-13138585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1https://images.pexels.com/photos/13138585/pexels-photo-13138585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Shoes"
         />
-        <div class="text-center">
-          <h6 class="text-xs font-base">SERVICIO</h6>
-          <h4 class="text-lg font-mono">CABELLO</h4>
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Shoes!</h2>
+        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Buy Now</button>
         </div>
-      </a>
+      </div>
     </div>
   </article>
-  <article>
-    <a href="">
-      <img
-        src="https://images.pexels.com/photos/3998421/pexels-photo-3998421.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        alt="barba"
-      />
-      <div class="text-center">
-        <h6 class="text-xs font-base">SERVICIO</h6>
-        <h4 class="text-lg font-mono">BARBA</h4>
+  <article class="m-5">
+    <div class="card w-[320px] md:w-[300px] bg-base-100 shadow-xl rounded-xl">
+      <figure class="">
+        <img
+          class="rounded-t-lg"
+          src="https://images.pexels.com/photos/3998421/pexels-photo-3998421.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Shoes"
+        />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Shoes!</h2>
+        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Buy Now</button>
+        </div>
       </div>
-    </a>
+    </div>
   </article>
-  <article>
-    <a href="">
-      <img
-        src="https://images.pexels.com/photos/17553840/pexels-photo-17553840/free-photo-of-hombre-trabajando-toalla-peluquero.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        alt="Facial"
-      />
-      <div class="text-center">
-        <h6 class="text-xs font-base">SERVICIO</h6>
-        <h4 class="text-lg font-mono">FACIAL</h4>
+  <article class="m-5">
+    <div class="card w-[320px] md:w-[300px] bg-base-100 shadow-xl rounded-xl">
+      <figure class="">
+        <img
+          class="rounded-t-lg"
+          src="https://images.pexels.com/photos/17553840/pexels-photo-17553840/free-photo-of-hombre-trabajando-toalla-peluquero.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1https://images.pexels.com/photos/17553840/pexels-photo-17553840/free-photo-of-hombre-trabajando-toalla-peluquero.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Shoes"
+        />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Shoes!</h2>
+        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Buy Now</button>
+        </div>
       </div>
-    </a>
+    </div>
   </article>
-  <article>
-    <a class="" href="">
-      <img
-        src="https://images.pexels.com/photos/7697712/pexels-photo-7697712.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        alt="Productos"
-      />
-      <div class="text-center">
-        <h6 class="text-xs font-base">SERVICIO</h6>
-        <h4 class="text-lg font-mono">PRODUCTOS</h4>
+  <article class="m-5">
+    <div class="card w-[320px] md:w-[300px] bg-base-100 shadow-xl rounded-xl">
+      <figure class="">
+        <img
+          class="rounded-t-lg"
+          src="https://images.pexels.com/photos/7697712/pexels-photo-7697712.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Shoes"
+        />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Shoes!</h2>
+        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Buy Now</button>
+        </div>
       </div>
-    </a>
+    </div>
   </article>
 </section>
-
-<style>
-  section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-
-  article {
-    height: 200px;
-    border-radius: 2px;
-  }
-
-  img {
-    width: 338px;
-    height: 220px;
-  }
-</style>
