@@ -5,6 +5,7 @@ import Layout from "../layouts/Layout.astro";
 import ImageMain from "../components/ImageMain.astro";
 import Services from "../components/Services.astro";
 import Reverce from "../components/Reverce.astro";
+import Maps from "../components/Maps.astro";
 import CardService from "../components/CardService.astro";
 ---
 
@@ -18,8 +19,11 @@ import CardService from "../components/CardService.astro";
     <Services />
   </section>
 
-  <section>
+  <section
+    class="flex flex-col justify-center md:flex md:flex-row items-center md:justify-center md:space-x-36 space-y-0"
+  >
     <Reverce />
+    <Maps />
   </section>
 
   <Footer />
