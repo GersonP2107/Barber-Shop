@@ -3,28 +3,29 @@ import Footer from "../components/Footer.astro";
 import Layout from "../layouts/Layout.astro";
 import ImageMain from "../components/ImageMain.astro";
 import Services from "../components/Services.astro";
-import Reverce from "../components/Reverce.astro";
 import About from "../components/About.astro";
 import Team from "../components/Team.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Reserva from "../components/Reserva.astro";
 ---
 
 <Layout title="BarberShop" />
 <main>
-  <section class="">
+  <SectionContainer class="">
     <ImageMain />
-  </section>
+  </SectionContainer>
 
-  <section class="h-full text-black">
+  <SectionContainer id="services" class="m-5 h-full text-black">
     <Services />
-  </section>
+  </SectionContainer>
 
   <section
-    class="flex flex-col justify-center bg-[#3c3c3c] text-white md:flex md:flex-row items-center md:justify-center md:space-x-36 space-y-0"
+    class="flex flex-col justify-center bg-gradient-to-r from-sky-500 from-10% via-shy-500 via-30% to-emerald-500 to-90% text-white md:flex md:flex-row items-center md:justify-center md:space-x-36 space-y-0"
   >
     <Team />
-    <Reverce />
+    <Reserva />
   </section>
-  <section class="m-5 pt-9">
+  <section class="m-5">
     <About />
   </section>
   <Footer />
