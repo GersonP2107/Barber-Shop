@@ -6,12 +6,16 @@ import Services from "../components/Services.astro";
 import About from "../components/About.astro";
 import Team from "../components/Team.astro";
 import SectionContainer from "../components/SectionContainer.astro";
-import Reserva from "../components/Reserva.astro";
+import Reserve from "../components/Reserve.astro";
+import Diary from "../components/Diary.astro";
 ---
 
-<Layout title="BarberShop" />
+<Layout
+  title="BarberShop"
+  description="En BarberShop tenemos excelencia en cada corte, estilo en cada detalle. Nuestros barberos expertos te ofrecen una experiencia única con técnicas de vanguardia y productos premium. Redescubre tu mejor versión con nosotros."
+/>
 <main>
-  <SectionContainer class="">
+  <SectionContainer>
     <ImageMain />
   </SectionContainer>
 
@@ -19,14 +23,17 @@ import Reserva from "../components/Reserva.astro";
     <Services />
   </SectionContainer>
 
-  <section
+  <SectionContainer
     class="flex flex-col justify-center bg-gradient-to-r from-sky-500 from-10% via-shy-500 via-30% to-emerald-500 to-90% text-white md:flex md:flex-row items-center md:justify-center md:space-x-36 space-y-0"
   >
     <Team />
-    <Reserva />
-  </section>
-  <section class="m-5">
+    <Reserve />
+  </SectionContainer>
+  <SectionContainer id="diary">
+    <Diary />
+  </SectionContainer>
+  <SectionContainer id="about" class="m-5">
     <About />
-  </section>
+  </SectionContainer>
   <Footer />
 </main>

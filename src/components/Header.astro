@@ -1,19 +1,18 @@
-<header class="fixed w-full bg-white opacity-90">
+<header class="w-full bg-white opacity-90">
   <div class="top-0 items-center w-full">
-    <nav class="w-full shadow p-2.5 md:flex md:items-center md:justify-between">
-      <div class="flex justify-between items-center">
+    <nav
+      class="w-full shadow md:p-2.5 md:flex md:items-center md:justify-between"
+    >
+      <div class="nav-links flex justify-between items-center">
         <span class="text-2xl cursor-pointer font-[Poppins]">
-          <img
-            class="size-24 md:size-16 inline"
-            src="https://img.freepik.com/vector-premium/plantilla-logotipo-barberia-vintage_441059-26.jpg?size=338&ext=jpg&ga=GA1.1.1546980028.1715212800&semt=ais"
-          />
+          <img class="size-24 md:size-16 inline" src="/images/logo.jpg" />
           <span
             class="text-xl font-semibold md:opacity-100 font-['Onest_Variable']"
             >BarberShop</span
           >
         </span>
-        <div class="text-3xl cursor-pointer mx-2 md:hidden block">
-          <ion-icon name="menu" onClick="Menu(this)"></ion-icon>
+        <div class="text-3xl cursor-pointer mx-2 md:hidden">
+          <ion-icon onclick="onToggleMenu(this)" name="menu"></ion-icon>
         </div>
       </div>
 
@@ -30,16 +29,22 @@
         >
         <a
           class="text-black font-semibold mx-4 my-6 hover:text-sky-500 duration-500"
-          href="https://api.whatsapp.com/send?phone=573236128822&text=Hola,%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20acerca%20de%20CAPIT%C3%81N%20BARBAS"
-          >¡Agenda tu cita!</a
+          href="#diary">¡Agenda tu cita!</a
         >
 
         <a
           class="text-black font-semibold mx-4 my-6 hover:text-sky-500 duration-500"
-          href="pruebas
+          href="#about
           ">¿Quienes Somos?</a
         >
       </ul>
     </nav>
+    <script>
+      const navLinks = document.querySelector(".nav-links");
+      function onToggleMenu(e) {
+        e.name = e.name === "menu" ? "close" : "menu";
+        navLinks.classList.toggle("top-[9%]");
+      }
+    </script>
   </div>
 </header>
