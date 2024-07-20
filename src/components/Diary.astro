@@ -1,18 +1,27 @@
-<div class="flex flex-col text-center justify-center m-5">
-  <div class="">
-    <h1 class="text-center font-bold text-2xl md:text-3xl m-5">
+---
+import GoogleIcon from "../components/icons/GoogleIcon.astro";
+import WhatsappIcon from "../components/icons/WhatsappIcon.astro";
+---
+
+<div
+  class="flex flex-row-reverse text-center justify-center items-center m-5 py-10"
+>
+  <div class="flex flex-col">
+    <h2 class="text-center font-bold text-2xl md:text-3xl m-2">
       ¡Agenda tu cita ya!
-    </h1>
+    </h2>
+
+    <p
+      class="m-5 pb-10 md:text-2xl font-bold text-center text-pretty md:w-[450px]"
+    >
+      Usando <GoogleIcon />Google Calendar o mediante <WhatsappIcon /> Whatsapp
+    </p>
   </div>
-  <p class="m-5 md:text-xl text-center text-pretty">
-    ¡No pierdas la oportunidad! Reserva tu lugar en nuestro calendario haciendo
-    clic aquí y ahora. ¡Tu momento perfecto te espera!
-  </p>
 
   <!-- Comienza la programación de citas de Google Calendar -->
-  <div class="flex justify-center w-full h-600">
+  <div class="flex justify-center w-auto h-400">
     <iframe
-      class="w-11/12 md:w-9/12 h-[600px]"
+      class="w-11/12 md:w-[470px] h-[430px]"
       src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3PRKTh2Q0heaychdfKbSL8wF-eAg4BjwW3QCSghgrRN2W_V69yOty3OvPCzXhx2o770_PfiKc5?gv=true"
       style="border: 0"
       frameborder="0"

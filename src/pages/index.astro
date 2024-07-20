@@ -1,5 +1,7 @@
 ---
 import Footer from "../components/Footer.astro";
+import Schedules from "../components/Schedules.astro";
+import Maps from "../components/Maps.astro";
 import Layout from "../layouts/Layout.astro";
 import ImageMain from "../components/ImageMain.astro";
 import Services from "../components/Services.astro";
@@ -18,9 +20,8 @@ import Diary from "../components/Diary.astro";
   <SectionContainer>
     <ImageMain />
   </SectionContainer>
-
-  <SectionContainer id="services" class="m-5 h-full text-black">
-    <Services />
+  <SectionContainer id="diary">
+    <Diary />
   </SectionContainer>
 
   <SectionContainer
@@ -29,11 +30,17 @@ import Diary from "../components/Diary.astro";
     <Team />
     <Reserve />
   </SectionContainer>
-  <SectionContainer id="diary">
-    <Diary />
+
+  <SectionContainer id="services" class="m-5 h-full text-black">
+    <Services />
   </SectionContainer>
-  <SectionContainer id="about" class="m-5">
+
+  <SectionContainer
+    id="about"
+    class="flex flex-col bg-gradient-to-r from-[#00ea6b] from-10% to-[#0480d8] to-90% md:flex-row justify-center items-center text-white"
+  >
     <About />
+    <Maps class="bg-emerald-950 m-5" />
   </SectionContainer>
   <Footer />
 </main>
