@@ -1,0 +1,95 @@
+---
+import SectionContainer from "./SectionContainer.astro";
+import InstagramButton from "./InstagramButtom.astro";
+import ButtomWhatsapp from "./ButtomWhatsapp.astro";
+import InstagramButtom from "./InstagramButtom.astro";
+---
+
+<SectionContainer class="flex justify-center md:w-[50%]">
+  <div class="flex flex-col w-[50%] items-center m-5">
+    <div class="flex flex-row items-center">
+      <img
+        class="rounded-full size-24 m-5 hover:scale-110 duration-150"
+        src="/images/barbers/Jorge.jpeg"
+        alt="Andres Nuñez"
+      />
+      <h4 class="text-2xl font-bold md:opacity-100 font-['Onest_Variable']">
+        Jorge Prado
+      </h4>
+    </div>
+    <p class="text-center text-xl text-pretty font-semibold">
+      Admira el trabajo sobresaliente de nuestro experimentado barbero, Jorge
+      Prado. Con años de práctica y una pasión por la perfección, Jorge ofrece
+      cortes impecables y modernos. Sumérgete en su mundo de creatividad y
+      precisión con estas imágenes que muestran su increíble talento.
+    </p>
+    <div class="flex flex-row justify-center items-center gap-5 m-10">
+      <InstagramButtom />
+      <ButtomWhatsapp />
+    </div>
+  </div>
+</SectionContainer>
+<SectionContainer class="flex justify-center md:w-[50%]">
+  <div class="container">
+    <div class="slider-wrapper">
+      <div class="slider">
+        <img src="/images/CortesJorge/CorteJorge1.jpg" alt="" id="slide-7" />
+        <img src="/images/CortesJorge/CorteJorge2.jpg" alt="" id="slide-8" />
+        <img src="/images/CortesJorge/CorteJorge3.jpg" alt="" id="slide-9" />
+        <div class="slider-nav">
+          <a href="#slide-7"></a>
+          <a href="#slide-8"></a>
+          <a href="#slide-9"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</SectionContainer>
+
+<style>
+  .container {
+    padding: 2rem;
+    width: 450px;
+    height: 555px;
+  }
+  .slider-wrapper {
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .slider {
+    display: flex;
+    aspect-ratio: auto;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+  }
+
+  .slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+  }
+  .slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  .slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+  }
+  .slider-nav a:hover {
+    opacity: 1;
+  }
+</style>

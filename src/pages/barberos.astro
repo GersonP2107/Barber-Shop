@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+import AndresNuñez from "../components/AndresNuñez.astro";
+import Footer from "../components/Footer.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import StivenCastillo from "../components/StivenCastillo.astro";
+import SantiagoGiraldo from "../components/SantiagoGiraldo.astro";
+import JorgePrado from "../components/JorgePrado.astro";
+---
+
+<Layout
+  title="Barbero Andres Nuñez"
+  description="Conoce a uno de nuestros profesionales llamado Andres Nuñez con amplia experiencia."
+/>
+<main class="flex flex-col justify-center items-center">
+  <SectionContainer class="flex flex-col md:flex-row items-center">
+    <AndresNuñez />
+  </SectionContainer>
+  <SectionContainer class="flex flex-col md:flex-row-reverse items-center">
+    <SantiagoGiraldo />
+  </SectionContainer>
+  <SectionContainer class="flex flex-col md:flex-row items-center">
+    <JorgePrado />
+  </SectionContainer>
+  <SectionContainer class="flex flex-col md:flex-row-reverse items-center">
+    <StivenCastillo />
+  </SectionContainer>
+</main>
+<Footer />

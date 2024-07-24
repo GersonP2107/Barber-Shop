@@ -4,22 +4,24 @@ import WhatsappIcon from "../components/icons/WhatsappIcon.astro";
 ---
 
 <div
-  class="flex flex-row-reverse text-center justify-center items-center m-5 py-10"
+  class="flex flex-col md:flex-row-reverse text-center justify-center items-center m-5 py-10"
 >
   <div class="flex flex-col">
     <h2 class="text-center font-bold text-2xl md:text-3xl m-2">
       ¡Agenda tu cita ya!
     </h2>
 
-    <p
-      class="m-5 pb-10 md:text-2xl font-bold text-center text-pretty md:w-[450px]"
-    >
-      Usando <GoogleIcon />Google Calendar o mediante <WhatsappIcon /> Whatsapp
+    <p class="m-5 md:text-2xl font-bold text-center text-pretty md:w-[450px]">
+      Usando Google Calendar o mediante Whatsapp
     </p>
+    <div class="flex flex-row justify-center gap-10 pb-10">
+      <GoogleIcon />
+      <WhatsappIcon />
+    </div>
   </div>
 
   <!-- Comienza la programación de citas de Google Calendar -->
-  <div class="flex justify-center w-auto h-400">
+  <div class="flex justify-center w-[90%] h-400">
     <iframe
       class="w-11/12 md:w-[470px] h-[430px]"
       src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3PRKTh2Q0heaychdfKbSL8wF-eAg4BjwW3QCSghgrRN2W_V69yOty3OvPCzXhx2o770_PfiKc5?gv=true"

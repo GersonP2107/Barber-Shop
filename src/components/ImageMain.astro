@@ -1,5 +1,7 @@
 <section class="flex flex-col text-white items-center justify-center bg-fixed">
-  <h1 class="text-4xl text-center text-grey-100 md:text-6xl md:text-center">
+  <h1
+    class="title-main text-4xl text-center text-grey-100 md:text-6xl md:text-center"
+  >
     Tu Corte Perfecto Comienza Aquí
   </h1>
   <h3 class="text-grey-900 text-base pb-3.5 md:text-2xl">
@@ -7,7 +9,7 @@
   </h3>
   <a
     href="https://api.whatsapp.com/send?phone=573236128822&text=Hola,%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20acerca%20de%20CAPIT%C3%81N%20BARBAS"
-    class="cursor-pointer bg-white text-black font-semibold opacity-80 px-5 rounded-md py-2.5 hover:opacity-60 duration-500 text-lg"
+    class="cursor-pointer bg-white text-black font-semibold px-5 rounded-md py-2.5 hover:opacity-60 duration-500 text-lg"
     >¡Agenda tu cita!</a
   >
 </section>
@@ -19,5 +21,45 @@
     background: url(/images/ImageMain.jpg) no-repeat center center/cover;
     background-color: rgba(255, 255, 255, 0.1);
     background-attachment: fixed;
+  }
+  h1.title-main.text-4xl.text-center.text-grey-100.md\:text-6xl.md\:text-center,
+  h3.text-grey-900.text-base.pb-3\.5.md\:text-2xl {
+    -webkit-animation: tracking-in-expand-fwd 0.8s
+      cubic-bezier(0.215, 0.61, 0.355, 1) 1s both;
+    animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1)
+      both;
+  }
+
+  @-webkit-keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+      transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+      transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      opacity: 1;
+    }
   }
 </style>
