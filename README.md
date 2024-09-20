@@ -27,5 +27,5 @@
 4.Ejecutar el servidor de desarrollo:
   npm start
 
-Demo
-Puedes acceder a la demo en vivo aquí: BarberShop Demo
+##Demo
+Puedes acceder a la demo en vivo aquí: https://barbershpp.netlify.app/
