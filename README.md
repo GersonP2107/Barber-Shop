@@ -1,4 +1,4 @@
-![just-the-basics](https://i.pinimg.com/736x/bf/cd/4c/bfcd4cd5e56b4ea190f40a881fbd90e5.jpg)
+![just-the-basics](https://i.pinimg.com/736x/02/30/93/023093eb5922d9a2e50884db2fe4136c.jpg)
 # BarberShop
 
 **Descripción**:  
