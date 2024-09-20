@@ -1,3 +1,4 @@
+![just-the-basics](https://i.pinimg.com/736x/bf/cd/4c/bfcd4cd5e56b4ea190f40a881fbd90e5.jpg)
 # BarberShop
 
 **Descripción**:  
